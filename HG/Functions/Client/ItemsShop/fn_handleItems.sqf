@@ -1,5 +1,6 @@
 /*
     Author - HoverGuy
+    Description - Called when you click "Buy" button in dialog
     Website - https://northernimpulse.com
 */
 params["_item",["_mode",false],["_qty",1],"_itemType","_cat",["_handled",true]];

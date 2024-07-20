@@ -1,5 +1,6 @@
 /*
     Author - HoverGuy
+    Description - Spawned when a vehicle is loaded
     Website - https://northernimpulse.com
 */
 params["_vehicle","_oldDir"];

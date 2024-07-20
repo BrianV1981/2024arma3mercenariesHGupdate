@@ -1,5 +1,7 @@
 /*
     Author - HoverGuy
+    Description - Called when you click "Buy" button in dialog
+    Returns - Empty array if all spawn positions are busy else first empty position
     Website - https://northernimpulse.com
 */
 params["_spawnPoints",["_sp",[false,""]],["_pos",[]],["_near",[]]];
