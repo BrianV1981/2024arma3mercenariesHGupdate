@@ -1,6 +1,6 @@
 /*
     Author - HoverGuy
-	Website - http://www.sunrise-production.com
+    Website - https://northernimpulse.com
 */
 
 class NotWhitelisted

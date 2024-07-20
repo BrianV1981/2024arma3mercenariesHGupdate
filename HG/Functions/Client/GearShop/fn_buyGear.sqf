@@ -1,7 +1,6 @@
 #include "HG_Macros.h"
 /*
     Author - HoverGuy
-    Description - Called when you click "Buy" button in dialog
     Website - https://northernimpulse.com
 */
 params[["_price",0],"_discount"];

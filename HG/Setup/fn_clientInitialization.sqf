@@ -16,6 +16,7 @@ HG_PAYCHECK_ENABLED = (getNumber(getMissionConfig "CfgClient" >> "enablePaycheck
 HG_GIVE_MONEY_ENABLED = (getNumber(getMissionConfig "CfgClient" >> "enableGiveMoney")) isEqualTo 1;
 HG_BUY_TO_GARAGE_ENABLED = (getNumber(getMissionConfig "CfgClient" >> "enableBuyToGarage")) isEqualTo 1;
 HG_KILL_REWARD_ENABLED = (getNumber(getMissionConfig "CfgClient" >> "enableKillReward")) isEqualTo 1;
+HG_DEATH_PENALTY_ENABLED = (getNumber(getMissionConfig "CfgClient" >> "enableDeathPenalty")) isEqualTo 1;
 HG_TEAM_KILL_PENALTY_ENABLED = (getNumber(getMissionConfig "CfgClient" >> "enableTeamKillPenalty")) isEqualTo 1;
 HG_CRATE_ENABLED = (getNumber(getMissionConfig "CfgClient" >> "enableCrate")) isEqualTo 1;
 HG_PLAYER_INVENTORY_SAVE_ENABLED = (getNumber(getMissionConfig "CfgClient" >> "enablePlayerInventorySave")) isEqualTo 1;
@@ -31,6 +32,7 @@ HG_BANK_VAR = getText(getMissionConfig "CfgClient" >> "bankVariable");
 /*
     Init EVHs
 */
+HG_LOADED_MEVH = addMissionEventHandler ["Loaded", {_this spawn HG_fnc_loaded}];
 HG_RESPAWN_EVH = player addEventHandler["Respawn",{_this call HG_fnc_respawn}];
 HG_KILLED_EVH = player addEventHandler["Killed",{_this call HG_fnc_killed}];
 HG_RATING_EVH = player addEventHandler["HandleRating",{_this call HG_fnc_handleRating}];

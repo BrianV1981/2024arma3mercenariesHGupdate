@@ -1,6 +1,6 @@
 /*
     Author - HoverGuy
-	Website - http://www.sunrise-production.com
+    Website - https://northernimpulse.com
 */
 
 class HG
@@ -46,6 +46,10 @@ class HG
 		class handleRating {};
 		class inventoryClosed {};
 		class inventoryOpened {};
+		class loaded 
+		{
+			preInit = 1;
+		};
 		class keyDown {};
 		class killed {};
 		class respawn {};
@@ -73,6 +77,7 @@ class HG
 		class gearSelectionChanged {};
 		class handleGear {};
 		class reset {};
+		class viewControl {};
 		class xGearSelectionChanged {};
 	};
 	
@@ -130,6 +135,30 @@ class HG
 		class itemBtns {};
 		class itemSelectionChanged {};
 		class xItemSelectionChanged {};
+	};
+	
+	class Server
+	{
+		file = "HG\Functions\Server";
+		class activeReset {};
+		class cleanup {};
+		class clientToServer {};
+		class deleteVehicle {};
+		class disconnect {};
+		class findIndex {};
+		class getGear {};
+		class getInventory {};
+		class getType {};
+		class getWhitelist {};
+		class killedVehicle {};
+		class lock {};
+		class requestGarage {};
+		class resetGarages {};
+		class resetMoney {};
+		class setInventory {};
+		class spawnVehicle {};
+		class storeVehicleServer {};
+		class updateWhitelist {};
 	};
 	
 	class Tags

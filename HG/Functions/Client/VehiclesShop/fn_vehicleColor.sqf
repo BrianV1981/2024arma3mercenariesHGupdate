@@ -1,7 +1,6 @@
 #include "HG_Macros.h"
 /*
     Author - HoverGuy
-    Description - Called by the player when the dialog is closed (with the dialog close button or by pressing escape)
     Website - https://northernimpulse.com
 */
 params["_ctrl","_index","_data"];
@@ -10,7 +9,7 @@ disableSerialization;
 
 _data = _ctrl lbData _index;
 
-if(_data != (localize "STR_HG_DEFAULT")) then
+if(_data != "") then
 {
     private["_val","_textures"];
 	

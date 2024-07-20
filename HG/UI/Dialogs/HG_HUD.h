@@ -1,15 +1,14 @@
 #include "..\HG_IDCS.h"
 /*
     Author - HoverGuy
-	© All Fucks Reserved
-	Website - http://www.sunrise-production.com
+    Website - https://northernimpulse.com
 */
 
 class HG_HUD
 {
 	idd = HG_NO_IDC;
 	duration = HG_INFINITE;
-	fadeIn = 0;
+	fadeIn = 2;
 	fadeOut = 0;
 	name = "HG_HUD";
 	onLoad = "uiNamespace setVariable ['HG_HUD',_this select 0]";
@@ -169,7 +168,6 @@ class HG_HUD_ALT: HG_HUD
 		
 		class XPText: XPText
 		{
-			style = "0x01";
 			x = 0.876406 * safezoneW + safezoneX;
 			w = 0.12375 * safezoneW;
 		};
