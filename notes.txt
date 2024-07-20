@@ -72,6 +72,17 @@ act_0 = [(localize "STR_HG_GARAGE_PARK"),'Store Vehicle',"HG\UI\Icons\garage.paa
 [this,0,["ACE_MainActions","CustomAction 1"],act_0] call ace_interact_menu_fnc_addActionToObject;act_0 = [(localize "STR_HG_DEALER"),'Enemy Vehicles Wanted',"HG\UI\Icons\car.paa",{["HG_DefaultDealer"] call HG_fnc_dialogOnLoadDealer},{(alive player) && !dialog},{},[],[],3] call ace_interact_menu_fnc_createAction; 
 [this,0,["ACE_MainActions"],act_0] call ace_interact_menu_fnc_addActionToObject;}
 
+old garage 1:
+
+call{act_0 = ["CustomAction 1",'Garage',"HG\UI\Icons\garage.paa",{true}] call ace_interact_menu_fnc_createAction;  
+[this,0,["ACE_MainActions"],act_0] call ace_interact_menu_fnc_addActionToObject;  
+ 
+act_0 = [(localize "STR_HG_GARAGE"),'Retrieve Vehicle',"HG\UI\Icons\garage.paa",{["HG_DefaultGarage"] call HG_fnc_dialogOnLoadGarage},{(alive player) && !dialog},{},[],[],3] call ace_interact_menu_fnc_createAction;  
+[this,0,["ACE_MainActions","CustomAction 1"],act_0] call ace_interact_menu_fnc_addActionToObject;  
+  
+act_0 = [(localize "STR_HG_GARAGE_PARK"),'Store Vehicle',"HG\UI\Icons\garage.paa",{["HG_DefaultGarage"] call HG_fnc_storeVehicleClient},{(alive player) && !dialog},{},[],[],3] call ace_interact_menu_fnc_createAction;  
+[this,0,["ACE_MainActions","CustomAction 1"],act_0] call ace_interact_menu_fnc_addActionToObject;}
+
 object name: garage_2
 
 call{act_0 = ["CustomAction 1",'Garage',"HG\UI\Icons\garage.paa",{true}] call ace_interact_menu_fnc_createAction;  
@@ -82,3 +93,16 @@ act_0 = [(localize "STR_HG_GARAGE"),'Retrieve Vehicle',"HG\UI\Icons\garage.paa",
   
 act_0 = [(localize "STR_HG_GARAGE_PARK"),'Store Vehicle',"HG\UI\Icons\garage.paa",{["HG_DefaultGarage"] call HG_fnc_storeVehicleClient},{(alive player) && !dialog},{},[],[],3] call ace_interact_menu_fnc_createAction;  
 [this,0,["ACE_MainActions","CustomAction 1"],act_0] call ace_interact_menu_fnc_addActionToObject;}
+
+old garage 2:
+
+call{act_0 = [(localize "STR_HG_DEALER"),'Sell Personal Vehicles',"HG\UI\Icons\car.paa",{["HG_DefaultDealer"] call HG_fnc_dialogOnLoadDealer},{(alive player) && !dialog},{},[],[],3] call ace_interact_menu_fnc_createAction; 
+ 
+[this,0,["ACE_MainActions"],act_0] call ace_interact_menu_fnc_addActionToObject;}
+
+
+
+////nothing is working....
+this addAction["<img image='HG\UI\Icons\garage.paa' size='2' shadow='0'/><t color='#FF0000' font='RobotoCondensedBold'>"+(localize "STR_HG_GARAGE")+"</t>",{_this call HG_fnc_dialogOnLoadGarage},"HG_DefaultGarage",0,false,false,"",'(alive player) && !dialog && player distance _target < 3'];
+this addAction["<img image='HG\UI\Icons\garage.paa' size='2' shadow='0'/><t color='#FF0000' font='RobotoCondensedBold'>"+(localize "STR_HG_GARAGE_PARK")+"</t>",{_this call HG_fnc_storeVehicleClient},"HG_DefaultGarage",0,false,false,"",'(alive player) && !dialog && player distance _target < 3'];
+this addAction["<img image='HG\UI\Icons\car.paa' size='2' shadow='0'/><t color='#FF0000' font='RobotoCondensedBold'>"+(localize "STR_HG_DEALER")+"</t>",{_this call HG_fnc_dialogOnLoadDealer},"HG_DefaultDealer",0,false,false,"",'(alive player) && !dialog && player distance _target < 3'];
