@@ -1,6 +1,5 @@
 /*
     Author - HoverGuy
-    Description - Called to return the config where the passed item belongs to
     Website - https://northernimpulse.com
 */
 params["_item"];

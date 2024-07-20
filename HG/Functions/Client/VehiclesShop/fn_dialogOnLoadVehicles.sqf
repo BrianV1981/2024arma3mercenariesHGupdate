@@ -1,7 +1,6 @@
 #include "HG_Macros.h"
 /*
     Author - HoverGuy
-    Description - Called by the player to open and feed the dialog with data
     Website - https://northernimpulse.com
 */
 params["_target","_caller","_id","_whatShop"];

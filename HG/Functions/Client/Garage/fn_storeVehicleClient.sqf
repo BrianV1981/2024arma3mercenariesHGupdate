@@ -3,7 +3,7 @@
     Author - HoverGuy
     Website - https://northernimpulse.com
 */
-params["_garage"];
+params["_target","_caller","_id","_garage"];
 if((typeName _garage) != "STRING") exitWith {hint (localize "STR_HG_ERR_ON_LOAD_1");};
 if(_garage isEqualTo "") exitWith {hint (localize "STR_HG_ERR_ON_LOAD_2");};
 
@@ -23,7 +23,7 @@ if(_storePoint isEqualTo "") then
     _pos = markerPos _storePoint;
 };
 
-_near = (nearestObjects [_pos,_allowedTypes,30]) select {alive _x};
+_near = (nearestObjects [_pos,_allowedTypes,8]) select {alive _x};
 
 if((count _near) > 0) then
 {

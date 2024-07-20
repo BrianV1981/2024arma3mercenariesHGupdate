@@ -1,6 +1,5 @@
 /*
     Author - HoverGuy
-    Description - Used to add or subtract money from the money variable
     Website - https://northernimpulse.com
 */
 params[["_amount",1,[0]],["_mode",0,[0]],["_where",0,[0]],"_oldVal","_newVal"];
