@@ -58,3 +58,27 @@ HG\Functions\Client\VehiclesShop\fn_vehicleSelectionChanged.sqf
     Website - https://northernimpulse.com
 */
 
+////////////////////////////////////
+
+object name: garage_1
+
+call{act_0 = ["CustomAction 1",'Garage',"HG\UI\Icons\garage.paa",{true}] call ace_interact_menu_fnc_createAction;  
+[this,0,["ACE_MainActions"],act_0] call ace_interact_menu_fnc_addActionToObject;  
+ 
+act_0 = [(localize "STR_HG_GARAGE"),'Retrieve Vehicle',"HG\UI\Icons\garage.paa",{["HG_DefaultGarage"] call HG_fnc_dialogOnLoadGarage},{(alive player) && !dialog},{},[],[],3] call ace_interact_menu_fnc_createAction;  
+[this,0,["ACE_MainActions","CustomAction 1"],act_0] call ace_interact_menu_fnc_addActionToObject;  
+  
+act_0 = [(localize "STR_HG_GARAGE_PARK"),'Store Vehicle',"HG\UI\Icons\garage.paa",{["HG_DefaultGarage"] call HG_fnc_storeVehicleClient},{(alive player) && !dialog},{},[],[],3] call ace_interact_menu_fnc_createAction;  
+[this,0,["ACE_MainActions","CustomAction 1"],act_0] call ace_interact_menu_fnc_addActionToObject;act_0 = [(localize "STR_HG_DEALER"),'Enemy Vehicles Wanted',"HG\UI\Icons\car.paa",{["HG_DefaultDealer"] call HG_fnc_dialogOnLoadDealer},{(alive player) && !dialog},{},[],[],3] call ace_interact_menu_fnc_createAction; 
+[this,0,["ACE_MainActions"],act_0] call ace_interact_menu_fnc_addActionToObject;}
+
+object name: garage_2
+
+call{act_0 = ["CustomAction 1",'Garage',"HG\UI\Icons\garage.paa",{true}] call ace_interact_menu_fnc_createAction;  
+[this,0,["ACE_MainActions"],act_0] call ace_interact_menu_fnc_addActionToObject;  
+ 
+act_0 = [(localize "STR_HG_GARAGE"),'Retrieve Vehicle',"HG\UI\Icons\garage.paa",{["HG_DefaultGarage"] call HG_fnc_dialogOnLoadGarage},{(alive player) && !dialog},{},[],[],3] call ace_interact_menu_fnc_createAction;  
+[this,0,["ACE_MainActions","CustomAction 1"],act_0] call ace_interact_menu_fnc_addActionToObject;  
+  
+act_0 = [(localize "STR_HG_GARAGE_PARK"),'Store Vehicle',"HG\UI\Icons\garage.paa",{["HG_DefaultGarage"] call HG_fnc_storeVehicleClient},{(alive player) && !dialog},{},[],[],3] call ace_interact_menu_fnc_createAction;  
+[this,0,["ACE_MainActions","CustomAction 1"],act_0] call ace_interact_menu_fnc_addActionToObject;}
