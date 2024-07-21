@@ -77,27 +77,27 @@ bankVariable = "HG_Bank";
 
 /* SYSTEMS */
 resetSavedMoney = false;
-enableHUD = true;
+enableHUD = false;
 hudType = 1;
-enablePaycheck = true;
-enableKillReward = true;
-enableDeathPenalty = true;
-enableTeamKillPenalty = true;
+enablePaycheck = false;
+enableKillReward = false;
+enableDeathPenalty = false;
+enableTeamKillPenalty = false;
 enableCrate = true;
-enableGiveMoney = true;
-enableBuyToGarage = true;
-clearInventory = true;
-storeVehiclesOnDisconnect = true;
-vehiclesCleanupPeriod = 1;
+enableGiveMoney = false;
+enableBuyToGarage = false;
+clearInventory = false;
+storeVehiclesOnDisconnect = false;
+vehiclesCleanupPeriod = 185;
 deleteBodyOnDisconnect = false;
 resetGaragesOnServerStart = false;
-enablePlayerInventorySave = true;
+enablePlayerInventorySave = false;
 enableVehicleInventorySave = true;
-enableXP = true;
-enableKillCount = true;
-enableTags = true;
-enableMarkers = true;
-enableATM = true;
+enableXP = false;
+enableKillCount = false;
+enableTags = false;
+enableMarkers = false;
+enableATM = false;
 enableWhitelist = false;
 
 /* WHITELIST */
@@ -107,12 +107,12 @@ whitelistSides[] = {"west"};
 admins[] = {"_SP_PLAYER_"};
 
 /* KEYS */
-atmKey = 0x14;
-lockUnlockKey = 0x15;
-giveMoneyKey = 0x23;
-giveKeyKey = 0x21;
-adminKey = 0xDB;
-hudKey = 0x37;
+atmKey = ;
+lockUnlockKey = ;
+giveMoneyKey = ;
+giveKeyKey = ;
+adminKey = ;
+hudKey = ;
 
 /* SAVING */
 savingMethod = "Profile";

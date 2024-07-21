@@ -113,6 +113,7 @@ HG\Config\HG_DealersCfg.h
 HG\Config\HG_GaragesCfg.h
 HG\Functions\Client\Dealer\fn_dealerSell.sqf
 HG\Functions\Client\Garage\fn_storeVehicleClient.sqf
+HG\Functions\Client\VehiclesShop\fn_addActions.sqf
 
 
 
